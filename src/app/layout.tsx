@@ -13,13 +13,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Timshel Global | Building Commissioning — Lubbock TX",
     description: "Building commissioning & owner's rep services in Lubbock, Texas. 16 years, 400+ projects across aviation, healthcare, higher education & more.",
-    url: "https://timshelglobal.com",
+    url: "https://timshelcx.com",
     siteName: "Timshel Global Services",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://timshelglobal.com/og-image.jpg",
+        url: "https://timshelcx.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Timshel Global — Building Commissioning Services in Lubbock, Texas",
@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Timshel Global | Building Commissioning — Lubbock TX",
     description: "Building commissioning & owner's rep services in Lubbock, Texas. 16 years, 400+ projects completed.",
-    images: ["https://timshelglobal.com/og-image.jpg"],
+    images: ["https://timshelcx.com/og-image.jpg"],
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://timshelglobal.com",
+    canonical: "https://timshelcx.com",
   },
 };
 
@@ -46,9 +46,9 @@ const jsonLd = {
   "@type": "LocalBusiness",
   name: "Timshel Global Services LLC",
   description: "Building Commissioning & Owner's Representative Services",
-  url: "https://timshelglobal.com",
+  url: "https://timshelcx.com",
   telephone: "(806) 433-8115",
-  email: "david@timshelglobal.com",
+  email: "david@timshelcx.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "13813 Quinton Ave",
