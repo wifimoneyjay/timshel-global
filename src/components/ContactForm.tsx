@@ -5,10 +5,35 @@ import { motion } from "framer-motion";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setError("");
+
+    const formData = new FormData(e.currentTarget);
+    formData.append("access_key", "YOUR_WEB3FORMS_KEY");
+    formData.append("subject", "New Lead — Timshel Global Website");
+    formData.append("from_name", "Timshel Global Website");
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please try again or call us directly.");
+      }
+    } catch {
+      setError("Something went wrong. Please try again or call us directly.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -165,12 +190,18 @@ export default function ContactForm() {
             />
           </div>
 
+          {/* Error message */}
+          {error && (
+            <p className="text-red-400 text-sm mb-6">{error}</p>
+          )}
+
           {/* Submit */}
           <button
             type="submit"
-            className="bg-[#4a90d9] hover:bg-[#3a7bc2] text-white px-8 py-4 text-sm tracking-widest uppercase font-sans transition-all duration-300 cursor-pointer"
+            disabled={submitting}
+            className="bg-[#4a90d9] hover:bg-[#3a7bc2] disabled:opacity-50 disabled:cursor-not-allowed text-white px-8 py-4 text-sm tracking-widest uppercase font-sans transition-all duration-300 cursor-pointer"
           >
-            Send Inquiry
+            {submitting ? "Sending..." : "Send Inquiry"}
           </button>
         </form>
       </div>

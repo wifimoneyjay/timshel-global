@@ -11,8 +11,10 @@ export default function HeroText() {
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         className="text-center px-6"
       >
-        <h1
-          className="text-white text-5xl md:text-7xl lg:text-8xl tracking-[0.3em] mb-4"
+        {/* Visual brand name — decorative, not the SEO H1 */}
+        <span
+          aria-hidden="true"
+          className="block text-white text-5xl md:text-7xl lg:text-8xl tracking-[0.3em] mb-4"
           style={{
             fontFamily: "'Playfair Display', serif",
             lineHeight: 1,
@@ -22,14 +24,15 @@ export default function HeroText() {
           TIMSHEL
           <br />
           GLOBAL
+        </span>
+
+        {/* SEO H1 — keyword-rich, visually styled as subtitle */}
+        <h1 className="text-[#4a90d9] text-sm md:text-base tracking-[0.15em] uppercase font-medium mb-4 max-w-xl mx-auto">
+          Building Commissioning &amp; Owner&apos;s Representative Services in Lubbock, Texas
         </h1>
 
-        <p className="text-[#4a90d9] text-sm md:text-base tracking-[0.15em] uppercase font-medium mb-4 max-w-xl mx-auto">
-          Building Commissioning &amp; Owner&apos;s Representative Services
-        </p>
-
         <p className="text-[#7a7a9e] text-xs md:text-sm tracking-[0.25em] uppercase font-medium">
-          Lubbock, Texas &bull; 16 Years &bull; 400+ Projects
+          16 Years of Excellence &bull; 400+ Projects Completed
         </p>
       </motion.div>
 

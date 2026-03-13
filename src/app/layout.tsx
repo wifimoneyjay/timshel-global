@@ -3,21 +3,34 @@ import "./globals.css";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
 
 export const metadata: Metadata = {
-  title: "Timshel Global | Building Commissioning & Owner's Representative Services | Lubbock TX",
-  description: "Timshel Global Services — 16 years of building commissioning excellence in Lubbock, Texas. New construction Cx, Continuous Commissioning®, owner's representative services, and data center commissioning. 400+ projects completed.",
-  keywords: "building commissioning Lubbock Texas, commissioning engineer Texas, continuous commissioning Texas A&M, owner's representative services Texas, data center commissioning Texas, building envelope commissioning",
+  title: "Timshel Global | Building Commissioning — Lubbock TX",
+  description: "Building commissioning & owner's rep services in Lubbock, Texas. 16 years, 400+ projects. New construction Cx, retro-Cx, data centers & more.",
+  keywords: "building commissioning Lubbock Texas, commissioning engineer Texas, continuous commissioning Texas A&M, owner's representative services Texas, data center commissioning, building envelope commissioning, Cx agent Lubbock",
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
-    title: "Timshel Global | Building Commissioning & Owner's Representative Services",
-    description: "16 years of building commissioning excellence. 400+ projects across aviation, healthcare, higher education, and more.",
+    title: "Timshel Global | Building Commissioning — Lubbock TX",
+    description: "Building commissioning & owner's rep services in Lubbock, Texas. 16 years, 400+ projects across aviation, healthcare, higher education & more.",
     url: "https://timshelglobal.com",
     siteName: "Timshel Global Services",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://timshelglobal.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Timshel Global — Building Commissioning Services in Lubbock, Texas",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Timshel Global | Building Commissioning",
-    description: "16 years of building commissioning excellence in Lubbock, Texas. 400+ projects completed.",
+    title: "Timshel Global | Building Commissioning — Lubbock TX",
+    description: "Building commissioning & owner's rep services in Lubbock, Texas. 16 years, 400+ projects completed.",
+    images: ["https://timshelglobal.com/og-image.png"],
   },
   robots: {
     index: true,
