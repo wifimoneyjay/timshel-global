@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://timshelglobal.com/og-image.png",
+        url: "https://timshelglobal.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Timshel Global — Building Commissioning Services in Lubbock, Texas",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Timshel Global | Building Commissioning — Lubbock TX",
     description: "Building commissioning & owner's rep services in Lubbock, Texas. 16 years, 400+ projects completed.",
-    images: ["https://timshelglobal.com/og-image.png"],
+    images: ["https://timshelglobal.com/og-image.jpg"],
   },
   robots: {
     index: true,
