@@ -15,84 +15,120 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "Texas Tech University — Science Research Facility",
+    name: "Jones Stadium South Endzone & Womble Football Complex — Texas Tech",
     sector: "Higher Education",
-    sf: "180,000 SF",
+    sf: "300,000 SF · $210M",
     description:
-      "New construction commissioning for a multi-story research facility including complex lab HVAC, fume hood systems, and building automation controls.",
+      "Commissioning services for the Jones Stadium South Endzone and Womble Football Complex. 300,000+ SF including the Scovell Family Locker Room, expanded strength and conditioning weight room, and multi-purpose walkthrough room. Completed October 2024.",
   },
   {
-    name: "UMC Health System — Patient Tower Expansion",
-    sector: "Healthcare",
-    sf: "240,000 SF",
+    name: "Academic Science Building — Texas Tech University",
+    sector: "Higher Education",
+    sf: "131,000 GSF · $92M",
     description:
-      "Enhanced commissioning for a critical care tower including medical gas systems, surgical suite HVAC, and redundant power distribution.",
+      "New construction commissioning for a three-story research facility with basement, including labs for Geosciences, Physics, Chemistry, Biology and Psychological Sciences. BSL 2 and BSL 3 laboratory and classroom space. Completed July 2024.",
   },
   {
-    name: "Lubbock-Preston Smith International — Terminal Renovation",
-    sector: "Aviation",
-    sf: "95,000 SF",
+    name: "Texas Tech School of Veterinary Medicine — Amarillo",
+    sector: "Higher Education",
+    sf: "$94M",
     description:
-      "Commissioning of renovated terminal HVAC, fire alarm, and building automation systems with phased occupied construction.",
+      "Commissioning Representative (CxR) and MEP coordination support for the construction of Texas Tech School of Veterinary Medicine. Coordinated machinal, electrical, and data services between multiple TTU organizations. Completed 2021.",
   },
   {
-    name: "Lubbock ISD — New High School Campus",
-    sector: "K-12 Government",
-    sf: "120,000 SF",
-    description:
-      "Fundamental commissioning per IECC requirements including split systems, VAV air handlers, lighting controls, and energy management.",
-  },
-  {
-    name: "Regional Tier III Data Center",
-    sector: "Data Centers",
-    sf: "60,000 SF",
-    description:
-      "Mission-critical commissioning including redundancy verification, generator transfer testing, precision cooling, and environmental monitoring.",
-  },
-  {
-    name: "Federal Aviation Administration — Regional Facility",
-    sector: "Aviation",
-    sf: "85,000 SF",
-    description:
-      "Owner's representative services and enhanced commissioning for a secure federal facility with specialized power and communications infrastructure.",
-  },
-  {
-    name: "West Texas Hotel & Conference Center",
-    sector: "Hospitality",
-    sf: "150,000 SF",
-    description:
-      "Continuous Commissioning® implementation for an existing hospitality facility achieving 18% energy reduction in year one.",
-  },
-  {
-    name: "Multi-Tenant Office Complex — Continuous Commissioning®",
+    name: "Summit Center Development — Midland, TX",
     sector: "Commercial",
-    sf: "200,000 SF",
+    sf: "20 Acres · $90M",
     description:
-      "Existing building optimization through the Texas A&M ESL CC® process. Identified and resolved 47 operational deficiencies.",
+      "Commissioning for the headquarters and shell spaces of the $90 million Summit Center. The development spans 20 acres with office space, retail shops, and restaurants. Tenants moving in summer 2024.",
+  },
+  {
+    name: "Angelo State University — Central Plant Upgrade",
+    sector: "Higher Education",
+    sf: "17 Buildings · $34M",
+    description:
+      "Owner's Representative for campus-wide upgrade of central heating and cooling plant, piping, and distribution throughout the San Angelo campus. Controls upgraded on 17 buildings. Est. completion November 2025.",
+  },
+  {
+    name: "Arnold Wing — Texas Tech Museum",
+    sector: "Higher Education",
+    sf: "$12M",
+    description:
+      "Commissioning Agent for a new 3-level addition to the Texas Tech Museum. Integration of newly added mechanical and electrical systems while keeping all existing HVAC operational. Sound quality critical for gallery spaces. Completed 2023.",
+  },
+  {
+    name: "West Texas A&M University — Admin & Classroom Renovation",
+    sector: "Higher Education",
+    sf: "$36.5M",
+    description:
+      "Complete renovation of an existing building for administrative and classroom space in downtown Amarillo. Major mechanical systems prefabricated in a self-contained mechanical room installed on the roof. Completed 2018.",
+  },
+  {
+    name: "UMC Health & Wellness Center — Lubbock",
+    sector: "Healthcare",
+    sf: "$15M+",
+    description:
+      "Commissioning Agent for new stand-alone UMC Health and Wellness center. Commissioned newly installed equipment and retro-commissioned existing systems including medical gas, compressed air, boiler and chiller systems, AHUs, BAS, and terminal units.",
+  },
+  {
+    name: "U.S. Consulate — Karachi, Pakistan",
+    sector: "International",
+    sf: "3 Buildings",
+    description:
+      "Commissioning Authority (CxA) and Reliability Centered Maintenance (RCM) support for Phase II Housing and Support Facilities including Consulate General Residence, Marine Security Guard Quarters, and Staff Housing Building.",
+  },
+  {
+    name: "U.S. Embassy — Skopje, Macedonia",
+    sector: "International",
+    sf: "6 Buildings",
+    description:
+      "CxA and RCM support for a New Embassy Compound including New Office Building, Utilities Building, General Services Office, Service Compound Access Control, and Marine Security Guard Quarters.",
+  },
+  {
+    name: "Dumas ISD — Multiple Schools",
+    sector: "K-12 Government",
+    sf: "$97M Total",
+    description:
+      "Commissioning agent services for four projects: Dumas North Elementary ($32M, 2023), Dumas South Elementary ($34.3M, 2024), Cactus Elementary ($22.8M, 2024), and Dumas CATE Center ($8M, est. 2025).",
+  },
+  {
+    name: "Lubbock High School — Central Plant Upgrades",
+    sector: "K-12 Government",
+    sf: "$7M",
+    description:
+      "Retro-commissioning of central plant upgrades for Lubbock ISD. Also retained as ongoing commissioning consultant. Completed July 2024.",
+  },
+  {
+    name: "New Office Annex — U.S. Embassy, Kabul, Afghanistan",
+    sector: "International",
+    sf: "ECCI",
+    description:
+      "Commissioning Representative (CxR) and Reliability Centered Maintenance (RCM) support for the design/build of a New Office Annex and Housing as well as all support facilities.",
+  },
+  {
+    name: "U.S. Embassy — Surabaya, Indonesia",
+    sector: "International",
+    sf: "3 Buildings",
+    description:
+      "Commissioning Authority (CxA) and RCM support for a New Consular Compound including New Office Building, Utilities Building, and Service Compound Access Control.",
   },
 ];
 
 const sectors = [
   "All",
-  "Aviation",
-  "Commercial",
   "Higher Education",
-  "K-12 Government",
+  "International",
   "Healthcare",
-  "Hospitality",
-  "Technology",
-  "Data Centers",
+  "Commercial",
+  "K-12 Government",
 ];
 
 const sectorGradients: Record<string, string> = {
-  Aviation: "linear-gradient(135deg, rgba(74, 144, 217, 0.2), #08081a)",
-  Commercial: "linear-gradient(135deg, rgba(74, 144, 217, 0.1), #08081a)",
   "Higher Education": "linear-gradient(135deg, rgba(74, 144, 217, 0.15), #08081a)",
-  "K-12 Government": "linear-gradient(135deg, rgba(74, 144, 217, 0.1), #08081a)",
+  International: "linear-gradient(135deg, rgba(74, 144, 217, 0.2), #08081a)",
   Healthcare: "linear-gradient(135deg, rgba(74, 144, 217, 0.12), #08081a)",
-  Hospitality: "linear-gradient(135deg, rgba(74, 144, 217, 0.08), #08081a)",
-  Technology: "linear-gradient(135deg, rgba(74, 144, 217, 0.18), #08081a)",
-  "Data Centers": "linear-gradient(135deg, rgba(74, 144, 217, 0.25), #08081a)",
+  Commercial: "linear-gradient(135deg, rgba(74, 144, 217, 0.1), #08081a)",
+  "K-12 Government": "linear-gradient(135deg, rgba(74, 144, 217, 0.1), #08081a)",
 };
 
 export default function ProjectsPage() {

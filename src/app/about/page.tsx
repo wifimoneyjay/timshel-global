@@ -3,9 +3,9 @@ import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 
 export const metadata = {
-  title: "About | Timshel Global — David Sublett, PE",
+  title: "About | Timshel Global — David Sublett, BCxP",
   description:
-    "Learn about Timshel Global Services and founder David Sublett, PE. 16 years of building commissioning experience, Texas A&M trained, 400+ projects completed across Texas.",
+    "Learn about Timshel Global Services and founder David Sublett, BCxP. 23+ years of building commissioning experience, Texas A&M trained. Domestic and international projects across 7 countries.",
   alternates: { canonical: "https://timshelglobal.com/about" },
 };
 
@@ -48,15 +48,16 @@ export default function AboutPage() {
               </div>
               <div className="lg:col-span-8 space-y-6">
                 <p className="text-lg font-sans font-light leading-relaxed text-[#7a7a9e]">
-                  Timshel Global Services was founded in 2010 by David Sublett, PE,
+                  Timshel Global Services was founded in 2010 by David Sublett, BCxP,
                   with a clear vision: provide building owners with truly independent
                   commissioning and oversight services.
                 </p>
                 <p className="text-base font-sans font-light leading-relaxed text-[#7a7a9e]">
-                  Based in Lubbock, Texas, Timshel Global has completed over 400
-                  projects across seven sectors — from university research
-                  laboratories and hospital expansions to data centers and federal
-                  aviation facilities. Our focus has never wavered: systematic,
+                  Based in Lubbock, Texas, Timshel Global has performed work
+                  around the globe for a variety of clients and owners in both
+                  government and private markets — from university research
+                  laboratories and hospital expansions to U.S. embassy compounds
+                  and data centers. Our focus has never wavered: systematic,
                   data-driven verification of building systems. We don&apos;t design
                   buildings. We don&apos;t build them. We verify that they perform as
                   promised.
@@ -93,44 +94,46 @@ export default function AboutPage() {
                   <span className="text-[#4a90d9] uppercase tracking-[0.3em] text-xs font-sans">Leadership</span>
                 </div>
                 <h2 className="text-5xl text-white font-serif mb-2">
-                  David Sublett, PE
+                  David Sublett, BCxP
                 </h2>
                 <p className="mb-8 text-xs uppercase tracking-widest font-sans font-medium text-[#4a90d9]">
-                  Founder &amp; Principal Engineer
+                  Founder &amp; President
                 </p>
 
                 <div className="space-y-6">
                   <p className="text-lg font-sans font-light leading-relaxed text-[#7a7a9e]">
                     David holds a BS in Mechanical Engineering from
-                    Texas A&amp;M University and trained under the Energy Systems Laboratory&apos;s
+                    Texas A&amp;M University (2002) and trained under the Energy Systems Laboratory&apos;s
                     Continuous Commissioning&reg; program — one of the most rigorous
                     methodologies in the industry.
                   </p>
                   <p className="text-base font-sans font-light leading-relaxed text-[#7a7a9e]">
-                    Before founding Timshel Global, David served as a Design
-                    Engineer at Brown Consulting Engineers and progressed to Director
-                    of International Operations at EMR. These roles gave him extensive
-                    experience across mechanical systems design, project management,
-                    and international facility operations.
+                    With over 23 years of experience in building commissioning,
+                    mechanical/plumbing engineering design, and construction project
+                    management, David has successfully managed commercial, governmental,
+                    and industrial projects both domestically and internationally —
+                    including U.S. embassy and consulate compounds in Pakistan, Macedonia,
+                    Philippines, Indonesia, Rwanda, Switzerland, and Jamaica.
                   </p>
                   <p className="text-base font-sans font-light leading-relaxed text-[#7a7a9e]">
-                    As a licensed Professional Engineer in the State of Texas, David
-                    brings 16 years of commissioning leadership to every project.
-                    His hands-on approach and deep technical expertise have earned
-                    the trust of institutions like Texas Tech University and UMC
-                    Health System.
+                    Before founding Timshel Global, David served as a Mechanical
+                    Project Manager at Brown Consulting Engineers and progressed to
+                    Director of International Operations at EMR. His hands-on approach
+                    and deep technical expertise have earned the trust of institutions
+                    like Texas Tech University, UMC Health System, Angelo State
+                    University, and Lubbock ISD.
                   </p>
                 </div>
 
                 <div className="mt-8 flex items-center gap-8">
                   <div className="flex flex-col">
-                    <span className="text-white text-2xl font-bold font-serif">16+</span>
+                    <span className="text-white text-2xl font-bold font-serif">23+</span>
                     <span className="text-[10px] uppercase tracking-widest text-[#7a7a9e]">Years Cx</span>
                   </div>
                   <div className="w-[1px] h-8 bg-white/10" />
                   <div className="flex flex-col">
-                    <span className="text-white text-2xl font-bold font-serif">400+</span>
-                    <span className="text-[10px] uppercase tracking-widest text-[#7a7a9e]">Projects</span>
+                    <span className="text-white text-2xl font-bold font-serif">7</span>
+                    <span className="text-[10px] uppercase tracking-widest text-[#7a7a9e]">Countries</span>
                   </div>
                 </div>
               </div>
@@ -172,10 +175,10 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { abbr: "PE", label: "Professional Engineer" },
+                { abbr: "BCxP", label: "Building Commissioning Professional" },
+                { abbr: "QCxP", label: "Qualified Commissioning Professional" },
                 { abbr: "CC\u00AE", label: "Licensed Provider" },
-                { abbr: "CxA", label: "Commissioning Authority" },
-                { abbr: "LEED AP", label: "LEED Accredited Prof." },
+                { abbr: "BSME", label: "Texas A&M University" },
               ].map((cert) => (
                 <div
                   key={cert.abbr}

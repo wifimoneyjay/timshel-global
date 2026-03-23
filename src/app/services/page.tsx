@@ -109,7 +109,7 @@ const services = [
   },
   {
     number: "06",
-    name: "Energy Code Compliance",
+    name: "Energy Code Compliance & Consulting",
     description: [
       "Navigating Texas energy codes can be complex, especially as requirements evolve with each new edition of the IECC and updates to ASHRAE 90.1. We provide comprehensive energy code analysis, documentation, and verification to ensure your project meets all applicable requirements.",
       "Our involvement starts in design to verify compliance pathways and continues through construction to document installed conditions. We provide the third-party verification required by many jurisdictions.",
@@ -118,6 +118,7 @@ const services = [
       "Energy Code Analysis",
       "Compliance Pathway Documentation",
       "COMcheck/REScheck Modeling",
+      "Energy Modeling Services",
       "Construction Verification",
       "Insulation Inspection Reports",
       "Mechanical Efficiency Documentation",
@@ -125,6 +126,77 @@ const services = [
     ],
     sectors: ["All sectors"],
     standards: ["IECC 2021", "ASHRAE 90.1-2019", "Texas Health & Safety Code Chapter 388"],
+  },
+  {
+    number: "07",
+    name: "Construction Manager Agent (CMA) Services",
+    description: [
+      "As your Construction Manager Agent, Timshel Global provides independent oversight and coordination throughout the construction process. We manage the commissioning schedule in coordination with the overall project timeline, file monthly status reports, and issue deficiency reports to contractors.",
+      "Our CMA services ensure clear communication between all parties — owner, construction manager, general contractor, and subcontractors — while maintaining rigorous quality control through systematic inspection and testing protocols.",
+    ],
+    deliverables: [
+      "Monthly Project Status Reports",
+      "Commissioning Meeting Minutes",
+      "Deficiency Reports & Tracking",
+      "Contractor Coordination",
+      "Schedule Integration",
+      "Quality Control Documentation",
+    ],
+    sectors: ["Higher Education", "Healthcare", "Government", "Commercial"],
+    standards: [],
+  },
+  {
+    number: "08",
+    name: "Facility Assessment Services",
+    description: [
+      "Comprehensive evaluation of existing building systems to identify operational deficiencies, deferred maintenance needs, and opportunities for performance improvement. Our assessments provide building owners with a clear picture of current conditions and a prioritized roadmap for investment.",
+      "Timshel Global leverages tools like BlueRithm, a cloud-based commissioning platform, to manage and track our assessments — automating reports, streamlining collaboration, and providing real-time visibility into findings at both the project and organization level.",
+    ],
+    deliverables: [
+      "Facility Condition Assessment Report",
+      "Systems Performance Evaluation",
+      "Deferred Maintenance Inventory",
+      "Capital Planning Recommendations",
+      "Energy Performance Baseline",
+      "Prioritized Investment Roadmap",
+    ],
+    sectors: ["All sectors"],
+    standards: [],
+  },
+  {
+    number: "09",
+    name: "MEP Systems Design Review",
+    description: [
+      "Independent review of mechanical, electrical, and plumbing systems design to identify potential issues before construction begins. Our design review process catches coordination conflicts, code compliance gaps, and constructability concerns that can lead to costly change orders.",
+      "As commissioning professionals — not designers — we bring an unbiased perspective focused solely on whether the designed systems will meet the owner's operational requirements and performance expectations.",
+    ],
+    deliverables: [
+      "Design Review Comments & Recommendations",
+      "Code Compliance Verification",
+      "Submittal Review",
+      "Systems Coordination Review",
+      "Constructability Assessment",
+      "Design Intent Verification",
+    ],
+    sectors: ["All sectors"],
+    standards: ["ASHRAE Standards", "IECC", "NEC", "UPC/IPC"],
+  },
+  {
+    number: "10",
+    name: "Cost Estimating Services",
+    description: [
+      "Accurate, independent cost estimating for MEP systems and commissioning scope. Our estimates help building owners budget appropriately for commissioning services and evaluate contractor proposals against realistic benchmarks.",
+      "With over two decades of project experience across multiple sectors and project sizes ranging from $7 million to $210 million, we bring real-world pricing knowledge that pure estimating firms often lack.",
+    ],
+    deliverables: [
+      "MEP Systems Cost Estimates",
+      "Commissioning Budget Development",
+      "Contractor Proposal Evaluation",
+      "Value Engineering Support",
+      "Life-Cycle Cost Analysis",
+    ],
+    sectors: ["All sectors"],
+    standards: [],
   },
 ];
 

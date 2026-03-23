@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -33,10 +34,15 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-12">
         {/* Logo */}
-        <Link href="/" className="group">
-          <span className="text-white text-xl md:text-2xl font-serif tracking-[0.3em] transition-colors duration-300 group-hover:text-[#4a90d9]">
-            TIMSHEL<span className="text-[#4a90d9]">.</span>
-          </span>
+        <Link href="/" className="group flex items-center gap-3">
+          <Image
+            src="/timshel-logo.jpeg"
+            alt="Timshel Global"
+            width={140}
+            height={40}
+            className="h-8 w-auto object-contain brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
+            priority
+          />
         </Link>
 
         {/* Desktop nav links */}

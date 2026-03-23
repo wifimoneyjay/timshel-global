@@ -10,10 +10,10 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { target: 16, suffix: "+", label: "Years of Experience" },
-  { target: 400, suffix: "+", label: "Projects Completed" },
-  { target: 25, suffix: "M+", label: "SF Commissioned" },
-  { target: 6, suffix: "", label: "Sectors Served" },
+  { target: 23, suffix: "+", label: "Years of Experience" },
+  { target: 500, suffix: "M+", label: "Total Project Value" },
+  { target: 7, suffix: "", label: "Countries Served" },
+  { target: 14, suffix: "+", label: "Years in Business" },
 ];
 
 function easeOutExpo(t: number): number {

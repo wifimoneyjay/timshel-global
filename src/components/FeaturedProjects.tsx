@@ -5,27 +5,27 @@ import Image from "next/image";
 
 const projects = [
   {
-    name: "Texas Tech University — Science Research Facility",
+    name: "Jones Stadium South Endzone & Womble Football Complex",
     sector: "Higher Education",
-    size: "180,000 SF",
+    size: "300,000 SF · $210M",
     image: "/project-university-real.jpg",
   },
   {
-    name: "UMC Health System — Patient Tower Expansion",
-    sector: "Healthcare",
-    size: "240,000 SF",
+    name: "Academic Science Building — Texas Tech University",
+    sector: "Higher Education",
+    size: "131,000 GSF · $92M",
     image: "/project-umc-real.webp",
   },
   {
-    name: "Lubbock-Preston Smith International — Terminal Renovation",
-    sector: "Aviation",
-    size: "95,000 SF",
+    name: "Summit Center Development — Midland, TX",
+    sector: "Commercial",
+    size: "20 Acres · $90M",
     image: "/project-airport-real.jpg",
   },
   {
-    name: "Regional Data Center — Tier III Facility",
-    sector: "Technology",
-    size: "60,000 SF",
+    name: "Texas Tech School of Veterinary Medicine — Amarillo",
+    sector: "Higher Education",
+    size: "$94M",
     image: "/project-datacenter.jpg",
   },
 ];
