@@ -59,4 +59,4 @@ The building illustration now uses the existing animation frames encoded as a fo
 
 The homepage headline loses only “in Lubbock, Texas.” Countries Served changes to 85, including the matching About-page statistic. The partnership row retains Texas Tech University, UMC Health System, and Lubbock ISD. The foundation licensing paragraph is removed. The sectors, project figures, and contact form remain intact.
 
-The new founder portrait, replacement logo, and updated credentials are awaiting owner-supplied assets/text.
+The founder portrait was subsequently replaced with a professional headshot created from the owner-supplied photograph, and PE was removed from the founder name and metadata. The replacement logo and updated credentials are still awaiting owner-supplied assets/text.

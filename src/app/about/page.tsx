@@ -79,9 +79,9 @@ export default function AboutPage() {
                   <div className="absolute inset-0 border border-[#4a90d9]/30 translate-x-4 translate-y-4" />
                   <div className="absolute inset-0 bg-[#141428] border border-white/10 overflow-hidden">
                     <img
-                      src="/david-headshot.jpg"
-                      alt="David Sublett, PE — Founder of Timshel Global Services"
-                      className="w-full h-full object-cover opacity-80 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-500"
+                      src="/david-professional-headshot.webp"
+                      alt="David Sublett — Founder of Timshel Global Services"
+                      className="w-full h-full object-cover  transition-all duration-500"
                     />
                   </div>
                 </div>

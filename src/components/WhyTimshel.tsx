@@ -13,13 +13,13 @@ export default function WhyTimshel() {
             <div className="absolute inset-0 border border-[#4a90d9]/30 translate-x-4 translate-y-4" />
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
-                src="/david-headshot.jpg"
-                alt="David Sublett, PE"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 opacity-80 hover:opacity-100 transition-all duration-700"
+                src="/david-professional-headshot.webp"
+                alt="David Sublett"
+                className="w-full h-full object-cover  transition-all duration-700"
               />
               {/* Name overlay */}
               <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/80 to-transparent w-full">
-                <p className="font-serif italic text-white text-lg">David Sublett, PE</p>
+                <p className="font-serif italic text-white text-lg">David Sublett</p>
                 <p className="text-[#4a90d9] text-sm tracking-wider">Founder</p>
               </div>
             </div>

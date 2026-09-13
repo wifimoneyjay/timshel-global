@@ -69,7 +69,7 @@ const jsonLd = {
   foundingDate: "2010",
   founder: {
     "@type": "Person",
-    name: "David Sublett, PE",
+    name: "David Sublett",
     jobTitle: "Owner & Principal Engineer",
   },
   numberOfEmployees: {
