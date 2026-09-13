@@ -48,7 +48,7 @@ const jsonLd = {
   description: "Building Commissioning & Owner's Representative Services",
   url: "https://timshelcx.com",
   telephone: "(806) 433-8115",
-  email: "david@timshelcx.com",
+  email: "dsublett@timshelglobal.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "13813 Quinton Ave",

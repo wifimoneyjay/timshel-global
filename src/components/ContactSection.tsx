@@ -40,7 +40,7 @@ const contactDetails = [
   },
   {
     label: "Email",
-    value: "david@timshelglobal.com",
+    value: "dsublett@timshelglobal.com",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path

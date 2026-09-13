@@ -94,10 +94,10 @@ export default function ContactPage() {
                   <div>
                     <p className="text-xs uppercase tracking-widest text-[#7a7a9e] font-sans mb-2">Email</p>
                     <a
-                      href="mailto:david@timshelglobal.com"
+                      href="mailto:dsublett@timshelglobal.com"
                       className="text-base font-sans font-light text-white/80 hover:text-[#4a90d9] transition-colors duration-300"
                     >
-                      david@timshelglobal.com
+                      dsublett@timshelglobal.com
                     </a>
                   </div>
                 </div>

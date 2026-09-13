@@ -14,17 +14,28 @@ export default function ContactForm() {
     setError("");
 
     const formData = new FormData(e.currentTarget);
-    formData.append("access_key", "YOUR_WEB3FORMS_KEY");
-    formData.append("subject", "New Lead — Timshel Global Website");
-    formData.append("from_name", "Timshel Global Website");
+    const payload: Record<string, string> = {};
+    formData.forEach((value, key) => {
+      payload[key] = String(value);
+    });
+    payload._subject = "New Lead — Timshel Global Website";
+    payload._template = "table";
+    payload._captcha = "false";
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
-      });
+      const res = await fetch(
+        "https://formsubmit.co/ajax/dsublett@timshelglobal.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
       const data = await res.json();
-      if (data.success) {
+      if (data.success === true || data.success === "true") {
         setSubmitted(true);
       } else {
         setError("Something went wrong. Please try again or call us directly.");
