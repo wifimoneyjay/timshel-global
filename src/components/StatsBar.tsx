@@ -12,7 +12,7 @@ interface Stat {
 const stats: Stat[] = [
   { target: 23, suffix: "+", label: "Years of Experience" },
   { target: 500, suffix: "M+", label: "Total Project Value" },
-  { target: 7, suffix: "", label: "Countries Served" },
+  { target: 85, suffix: "", label: "Countries Served" },
   { target: 14, suffix: "+", label: "Years in Business" },
 ];
 

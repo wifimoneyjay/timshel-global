@@ -5,7 +5,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 export const metadata = {
   title: "About | Timshel Global — David Sublett, BCxP",
   description:
-    "Learn about Timshel Global Services and founder David Sublett, BCxP. 23+ years of building commissioning experience, Texas A&M trained. Domestic and international projects across 7 countries.",
+    "Learn about Timshel Global Services and founder David Sublett, BCxP. 23+ years of building commissioning experience, Texas A&M trained. Domestic and international projects across 85 countries.",
   alternates: { canonical: "https://timshelglobal.com/about" },
 };
 
@@ -75,13 +75,13 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
               {/* Photo — offset frame design */}
               <div className="lg:col-span-5">
-                <div className="relative aspect-[4/5]">
+                <div className="relative aspect-[4/5] w-full max-w-[240px] md:max-w-[280px] mx-auto">
                   <div className="absolute inset-0 border border-[#4a90d9]/30 translate-x-4 translate-y-4" />
                   <div className="absolute inset-0 bg-[#141428] border border-white/10 overflow-hidden">
                     <img
-                      src="/david-headshot.jpg"
-                      alt="David Sublett, PE — Founder of Timshel Global Services"
-                      className="w-full h-full object-cover opacity-80 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-500"
+                      src="/david-professional-headshot.webp"
+                      alt="David Sublett — Founder of Timshel Global Services"
+                      className="w-full h-full object-cover  transition-all duration-500"
                     />
                   </div>
                 </div>
@@ -103,9 +103,7 @@ export default function AboutPage() {
                 <div className="space-y-6">
                   <p className="text-lg font-sans font-light leading-relaxed text-[#7a7a9e]">
                     David holds a BS in Mechanical Engineering from
-                    Texas A&amp;M University (2002) and trained under the Energy Systems Laboratory&apos;s
-                    Continuous Commissioning&reg; program — one of the most rigorous
-                    methodologies in the industry.
+                    Texas A&amp;M University (2002).
                   </p>
                   <p className="text-base font-sans font-light leading-relaxed text-[#7a7a9e]">
                     With over 23 years of experience in building commissioning,
@@ -132,7 +130,7 @@ export default function AboutPage() {
                   </div>
                   <div className="w-[1px] h-8 bg-white/10" />
                   <div className="flex flex-col">
-                    <span className="text-white text-2xl font-bold font-serif">7</span>
+                    <span className="text-white text-2xl font-bold font-serif">85</span>
                     <span className="text-[10px] uppercase tracking-widest text-[#7a7a9e]">Countries</span>
                   </div>
                 </div>
@@ -173,11 +171,10 @@ export default function AboutPage() {
               </h2>
             </div>
 
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { abbr: "BCxP", label: "Building Commissioning Professional" },
                 { abbr: "QCxP", label: "Qualified Commissioning Professional" },
-                { abbr: "CC\u00AE", label: "Licensed Provider" },
                 { abbr: "BSME", label: "Texas A&M University" },
               ].map((cert) => (
                 <div
@@ -192,47 +189,6 @@ export default function AboutPage() {
                   </span>
                 </div>
               ))}
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* Texas A&M Partnership */}
-      <section className="bg-[#08081a] pb-28">
-        <div className="mx-auto max-w-6xl px-6">
-          <AnimatedSection>
-            <div className="bg-[#141428] border border-white/5 p-12 md:p-20 relative overflow-hidden">
-              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-12">
-                <h2 className="text-3xl md:text-4xl text-white font-serif max-w-md leading-tight">
-                  Continuous Commissioning&reg; Partnership
-                </h2>
-                <span className="border border-[#4a90d9]/30 bg-[#4a90d9]/5 px-6 py-2 text-[10px] uppercase tracking-widest font-bold text-[#4a90d9] font-sans">
-                  Texas A&amp;M ESL Licensed
-                </span>
-              </div>
-
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                <div className="lg:col-span-8">
-                  <p className="text-lg font-sans font-light leading-relaxed text-[#7a7a9e]">
-                    David Sublett trained directly under the Texas A&amp;M Energy
-                    Systems Laboratory&apos;s Continuous Commissioning&reg; program,
-                    and Timshel Global Services maintains an active license as a CC&reg;
-                    provider.
-                  </p>
-                  <p className="mt-8 text-base font-sans font-light leading-relaxed text-[#7a7a9e]">
-                    This license authorizes Timshel Global to deliver the
-                    full CC&reg; process — from performance benchmarking and operational
-                    optimization to sustained savings verification — using the
-                    methodology developed and refined by Texas A&amp;M over decades of
-                    applied research in building performance.
-                  </p>
-                </div>
-                <div className="lg:col-span-4 flex items-center justify-center">
-                  <div className="w-32 h-32 border border-[#4a90d9]/20 flex items-center justify-center rotate-45 group hover:border-[#4a90d9] transition-colors duration-500">
-                    <span className="text-[#4a90d9] font-bold text-xl -rotate-45 font-serif">TAMU</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </AnimatedSection>
         </div>

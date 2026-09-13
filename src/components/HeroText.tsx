@@ -28,7 +28,7 @@ export default function HeroText() {
 
         {/* SEO H1 — keyword-rich, visually styled as subtitle */}
         <h1 className="text-[#4a90d9] text-sm md:text-base tracking-[0.15em] uppercase font-medium mb-4 max-w-xl mx-auto">
-          Building Commissioning &amp; Owner&apos;s Representative Services in Lubbock, Texas
+          Building Commissioning &amp; Owner&apos;s Representative Services
         </h1>
 
         <p className="text-[#7a7a9e] text-xs md:text-sm tracking-[0.25em] uppercase font-medium">

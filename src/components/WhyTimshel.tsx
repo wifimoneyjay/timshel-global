@@ -8,18 +8,18 @@ export default function WhyTimshel() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
         {/* Photo column */}
         <AnimatedSection>
-          <div className="relative max-w-md mx-auto md:mx-0">
+          <div className="relative w-full max-w-[240px] md:max-w-[280px] mx-auto">
             {/* Offset blue border frame */}
             <div className="absolute inset-0 border border-[#4a90d9]/30 translate-x-4 translate-y-4" />
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
-                src="/david-headshot.jpg"
-                alt="David Sublett, PE"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 opacity-80 hover:opacity-100 transition-all duration-700"
+                src="/david-professional-headshot.webp"
+                alt="David Sublett"
+                className="w-full h-full object-cover  transition-all duration-700"
               />
               {/* Name overlay */}
               <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/80 to-transparent w-full">
-                <p className="font-serif italic text-white text-lg">David Sublett, PE</p>
+                <p className="font-serif italic text-white text-lg">David Sublett</p>
                 <p className="text-[#4a90d9] text-sm tracking-wider">Founder</p>
               </div>
             </div>
@@ -43,9 +43,7 @@ export default function WhyTimshel() {
           </p>
 
           <p className="text-[#7a7a9e] text-base leading-relaxed font-light">
-            As one of a select group of firms licensed for the Continuous Commissioning&reg; process
-            through the Texas A&amp;M Energy Systems Laboratory, we bring a level of rigor and
-            specialization that most firms simply cannot. Commissioning and owner representation is
+            Commissioning and owner representation is
             all we do — and that singular focus is what makes the difference.
           </p>
         </AnimatedSection>
