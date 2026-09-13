@@ -8,7 +8,7 @@ export default function WhyTimshel() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
         {/* Photo column */}
         <AnimatedSection>
-          <div className="relative max-w-md mx-auto md:mx-0">
+          <div className="relative w-full max-w-[240px] md:max-w-[280px] mx-auto">
             {/* Offset blue border frame */}
             <div className="absolute inset-0 border border-[#4a90d9]/30 translate-x-4 translate-y-4" />
             <div className="relative aspect-[4/5] overflow-hidden">

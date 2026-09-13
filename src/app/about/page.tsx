@@ -75,7 +75,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
               {/* Photo — offset frame design */}
               <div className="lg:col-span-5">
-                <div className="relative aspect-[4/5]">
+                <div className="relative aspect-[4/5] w-full max-w-[240px] md:max-w-[280px] mx-auto">
                   <div className="absolute inset-0 border border-[#4a90d9]/30 translate-x-4 translate-y-4" />
                   <div className="absolute inset-0 bg-[#141428] border border-white/10 overflow-hidden">
                     <img

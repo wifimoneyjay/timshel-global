@@ -36,11 +36,11 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-3">
           <Image
-            src="/timshel-logo.jpeg"
+            src="/timshel-logo-dark.svg"
             alt="Timshel Global"
-            width={140}
-            height={40}
-            className="h-8 w-auto object-contain brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
+            width={610}
+            height={64}
+            className="w-[220px] md:w-[260px] h-auto object-contain"
             priority
           />
         </Link>

@@ -26,7 +26,7 @@ export default function BuildingExploder() {
     const observer = new IntersectionObserver(([entry]) => {
       isVisible = entry.isIntersecting;
       updatePlayback();
-    }, { threshold: 0.15 });
+    }, { threshold: 0, rootMargin: "120px 0px" });
     observer.observe(video);
     document.addEventListener("visibilitychange", updatePlayback);
     return () => {
@@ -51,17 +51,17 @@ export default function BuildingExploder() {
   return (
     <section className="relative py-16 md:py-24" aria-labelledby="building-process-heading">
       <div className="max-w-7xl mx-auto w-full px-6 md:px-12 grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-center">
-        <div className="relative w-full overflow-hidden rounded-lg border border-white/5 bg-[#0a0a18] aspect-video">
+        <div className="group relative w-full overflow-hidden rounded-lg border border-white/5 bg-[#0a0a18] aspect-video">
           <video
             id="building-process-animation"
             ref={videoRef}
             className="w-full h-full object-cover"
-            src="/building-loop.mp4"
+            src="/building-loop-smooth.mp4"
             poster="/frames/frame_0001.jpg"
             muted
             loop
             playsInline
-            preload="none"
+            preload="metadata"
             aria-label="Building animation revealing mechanical, electrical, plumbing, and structural systems"
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
@@ -71,10 +71,18 @@ export default function BuildingExploder() {
             <button
               type="button"
               onClick={togglePlayback}
+              aria-label={isPlaying ? "Pause building animation" : "Play building animation"}
+              title={isPlaying ? "Pause building animation" : "Play building animation"}
               aria-controls="building-process-animation"
-              className="absolute bottom-3 right-3 rounded border border-white/20 bg-[#08081a]/90 px-4 py-2 text-xs text-white hover:bg-[#141428] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4a90d9]"
+              className="absolute bottom-2 right-2 flex h-10 w-10 items-center justify-center rounded-full text-white/70 opacity-60 transition-opacity hover:text-white hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4a90d9] md:opacity-0 md:group-hover:opacity-100"
             >
-              {isPlaying ? "Pause animation" : "Play animation"}
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                {isPlaying ? (
+                  <path d="M7 5h3v14H7zm7 0h3v14h-3z" />
+                ) : (
+                  <path d="m8 5 11 7-11 7V5Z" />
+                )}
+              </svg>
             </button>
           )}
         </div>

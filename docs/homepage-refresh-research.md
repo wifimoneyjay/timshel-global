@@ -55,8 +55,10 @@ Source attribution is recorded here for provenance; these sources are not repres
 
 ## Animation and other requested changes
 
-The building illustration now uses the existing animation frames encoded as a forward-and-reverse MP4 loop. The section follows ordinary document flow, replacing the former 300-viewport-height sticky canvas. Playback starts when visible, pauses when offscreen or the browser tab is hidden, and includes a manual pause/play control. Reduced-motion preferences default to a still poster with optional playback.
+The building illustration now uses the original 24 fps video encoded as a forward-and-reverse MP4 loop. The section follows ordinary document flow, replacing the former 300-viewport-height sticky canvas. Playback starts when visible, pauses when offscreen or the browser tab is hidden, and includes a discreet pause/play icon that appears on hover or keyboard focus on desktop. Reduced-motion preferences default to a still poster with optional playback.
 
 The homepage headline loses only “in Lubbock, Texas.” Countries Served changes to 85, including the matching About-page statistic. The partnership row retains Texas Tech University, UMC Health System, and Lubbock ISD. The foundation licensing paragraph is removed. The sectors, project figures, and contact form remain intact.
 
 The founder portrait was subsequently replaced with a professional headshot created from the owner-supplied photograph, and PE was removed from the founder name and metadata. The replacement logo and updated credentials are still awaiting owner-supplied assets/text.
+
+The header logo was recreated as a transparent SVG using the existing split-diamond symbol and wordmark, with teal and light lettering for the dark header. This removes the JPEG background and the color filter that produced the white box.
