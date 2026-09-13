@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -11,11 +12,18 @@ interface Project {
   sector: string;
   sf: string;
   description: string;
+  image: string;
+  imageAlt: string;
+  imagePosition?: string;
+  imageCaption?: string;
 }
 
 const projects: Project[] = [
   {
     name: "Jones Stadium South Endzone & Womble Football Complex — Texas Tech",
+    image: "/project-jones-south-endzone.jpg",
+    imageAlt: "Field view of the Jones Stadium South Endzone at Texas Tech",
+    imagePosition: "center 80%",
     sector: "Higher Education",
     sf: "300,000 SF · $210M",
     description:
@@ -23,6 +31,8 @@ const projects: Project[] = [
   },
   {
     name: "Academic Science Building — Texas Tech University",
+    image: "/project-academic-sciences.jpg",
+    imageAlt: "Texas Tech Academic Sciences Building",
     sector: "Higher Education",
     sf: "131,000 GSF · $92M",
     description:
@@ -30,6 +40,8 @@ const projects: Project[] = [
   },
   {
     name: "Texas Tech School of Veterinary Medicine — Amarillo",
+    image: "/project-veterinary-medicine.jpg",
+    imageAlt: "Texas Tech School of Veterinary Medicine in Amarillo",
     sector: "Higher Education",
     sf: "$94M",
     description:
@@ -37,6 +49,8 @@ const projects: Project[] = [
   },
   {
     name: "Summit Center Development — Midland, TX",
+    image: "/project-summit-center.webp",
+    imageAlt: "Aerial view of Summit Center in Midland",
     sector: "Commercial",
     sf: "20 Acres · $90M",
     description:
@@ -44,6 +58,8 @@ const projects: Project[] = [
   },
   {
     name: "Angelo State University — Central Plant Upgrade",
+    image: "/portfolio-angelo.webp",
+    imageAlt: "Angelo State University physical plant and cooling towers",
     sector: "Higher Education",
     sf: "17 Buildings · $34M",
     description:
@@ -51,6 +67,8 @@ const projects: Project[] = [
   },
   {
     name: "Arnold Wing — Texas Tech Museum",
+    image: "/portfolio-arnold.webp",
+    imageAlt: "Interior of the Arnold Gallery at the Museum of Texas Tech",
     sector: "Higher Education",
     sf: "$12M",
     description:
@@ -58,6 +76,8 @@ const projects: Project[] = [
   },
   {
     name: "West Texas A&M University — Admin & Classroom Renovation",
+    image: "/portfolio-wtamu.webp",
+    imageAlt: "Harrington Academic Hall in downtown Amarillo",
     sector: "Higher Education",
     sf: "$36.5M",
     description:
@@ -65,6 +85,8 @@ const projects: Project[] = [
   },
   {
     name: "UMC Health & Wellness Center — Lubbock",
+    image: "/portfolio-umc.webp",
+    imageAlt: "UMC Health and Wellness Center exterior in Lubbock",
     sector: "Healthcare",
     sf: "$15M+",
     description:
@@ -72,6 +94,9 @@ const projects: Project[] = [
   },
   {
     name: "U.S. Consulate — Karachi, Pakistan",
+    image: "/portfolio-karachi.webp",
+    imageAlt: "Entrance of the U.S. Consulate in Karachi",
+    imageCaption: "Consulate compound",
     sector: "International",
     sf: "3 Buildings",
     description:
@@ -79,6 +104,8 @@ const projects: Project[] = [
   },
   {
     name: "U.S. Embassy — Skopje, Macedonia",
+    image: "/portfolio-skopje.webp",
+    imageAlt: "U.S. Embassy compound in Skopje",
     sector: "International",
     sf: "6 Buildings",
     description:
@@ -86,6 +113,9 @@ const projects: Project[] = [
   },
   {
     name: "Dumas ISD — Multiple Schools",
+    image: "/portfolio-dumas.webp",
+    imageAlt: "Dumas North Elementary School entrance",
+    imageCaption: "North Elementary",
     sector: "K-12 Government",
     sf: "$97M Total",
     description:
@@ -93,6 +123,9 @@ const projects: Project[] = [
   },
   {
     name: "Lubbock High School — Central Plant Upgrades",
+    image: "/portfolio-lubbock.webp",
+    imageAlt: "Historic exterior of Lubbock High School",
+    imageCaption: "School exterior",
     sector: "K-12 Government",
     sf: "$7M",
     description:
@@ -100,6 +133,9 @@ const projects: Project[] = [
   },
   {
     name: "New Office Annex — U.S. Embassy, Kabul, Afghanistan",
+    image: "/portfolio-kabul.webp",
+    imageAlt: "Historic view of the U.S. Embassy compound in Kabul",
+    imageCaption: "Embassy compound \u00b7 archival photo",
     sector: "International",
     sf: "ECCI",
     description:
@@ -107,6 +143,8 @@ const projects: Project[] = [
   },
   {
     name: "U.S. Embassy — Surabaya, Indonesia",
+    image: "/portfolio-surabaya.webp",
+    imageAlt: "U.S. Consulate compound in Surabaya",
     sector: "International",
     sf: "3 Buildings",
     description:
@@ -122,14 +160,6 @@ const sectors = [
   "Commercial",
   "K-12 Government",
 ];
-
-const sectorGradients: Record<string, string> = {
-  "Higher Education": "linear-gradient(135deg, rgba(74, 144, 217, 0.15), #08081a)",
-  International: "linear-gradient(135deg, rgba(74, 144, 217, 0.2), #08081a)",
-  Healthcare: "linear-gradient(135deg, rgba(74, 144, 217, 0.12), #08081a)",
-  Commercial: "linear-gradient(135deg, rgba(74, 144, 217, 0.1), #08081a)",
-  "K-12 Government": "linear-gradient(135deg, rgba(74, 144, 217, 0.1), #08081a)",
-};
 
 export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -169,6 +199,7 @@ export default function ProjectsPage() {
               <button
                 key={sector}
                 onClick={() => setActiveFilter(sector)}
+                aria-pressed={activeFilter === sector}
                 className={`px-5 py-2 rounded-full text-[10px] uppercase tracking-widest font-sans font-bold transition-all duration-300 cursor-pointer ${
                   activeFilter === sector
                     ? "bg-[#4a90d9] text-white"
@@ -196,32 +227,19 @@ export default function ProjectsPage() {
               >
                 {/* Visual Area */}
                 <div className="aspect-[16/10] relative overflow-hidden bg-[#0d0d1a]">
-                  <div
-                    className="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity duration-700"
-                    style={{ background: sectorGradients[project.sector] || "linear-gradient(135deg, rgba(74,144,217,0.05), #08081a)" }}
+                  <Image
+                    src={project.image}
+                    alt={project.imageAlt}
+                    fill
+                    sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1023px) calc((100vw - 72px) / 2), (max-width: 1279px) calc((100vw - 96px) / 3), 395px"
+                    style={{ objectPosition: project.imagePosition ?? "center" }}
+                    className="object-cover transition-transform duration-700 motion-safe:group-hover:scale-105"
                   />
-
-                  {/* Diagonal lines grid overlay */}
-                  <div
-                    className="absolute inset-0 opacity-[0.08] pointer-events-none"
-                    style={{
-                      backgroundImage: "repeating-linear-gradient(45deg, rgba(74, 144, 217, 0.3) 0, rgba(74, 144, 217, 0.3) 1px, transparent 0, transparent 50%)",
-                      backgroundSize: "16px 16px",
-                    }}
-                  />
-
-                  <div className="absolute inset-0 flex items-center justify-center p-8 opacity-15 group-hover:opacity-30 transition-opacity duration-700">
-                    <span className="text-white text-9xl font-bold italic font-serif">
-                      {project.sf.split(" ")[0]}
+                  {project.imageCaption && (
+                    <span className="absolute bottom-3 left-3 right-3 w-fit bg-[#08081a]/80 px-3 py-1.5 text-[10px] tracking-wide text-white/90">
+                      {project.imageCaption}
                     </span>
-                  </div>
-
-                  <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
-                    <span className="text-xs tracking-widest text-[#4a90d9] uppercase font-sans font-bold">
-                      {project.sector}
-                    </span>
-                    <span className="text-white/20 text-[10px] tracking-widest font-bold font-sans">TIMSHEL</span>
-                  </div>
+                  )}
                 </div>
 
                 {/* Card Content */}
@@ -254,6 +272,14 @@ export default function ProjectsPage() {
             ))}
           </AnimatePresence>
         </div>
+        <details className="max-w-7xl mx-auto px-6 mt-12 text-xs leading-relaxed text-[#7a7a9e]">
+          <summary className="cursor-pointer w-fit hover:text-white">Photo credits</summary>
+          <p className="mt-3 max-w-3xl">
+            Lubbock High School: <a className="underline" href="https://commons.wikimedia.org/wiki/File:Lubbock_April_2022_52_(Lubbock_High_School).jpg">Michael Barera</a>, <a className="underline" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Resized, converted to WebP, and cropped for display; the image remains available under the same license.
+            Arnold Gallery: © 2023 Museum of TTU / Mystie Do. Additional photography from Texas Tech, Angelo State, Sims + Architects, Lee Lewis Construction, BGR Architects, Summit Center, DLR Group, the U.S. Department of State, and USAID.
+          </p>
+          <a className="inline-block mt-2 underline" href="/project-photo-sources.txt">View photo sources</a>
+        </details>
       </main>
       <Footer />
     </>
