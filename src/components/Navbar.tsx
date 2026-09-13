@@ -34,13 +34,14 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-12">
         {/* Logo */}
-        <Link href="/" className="group flex items-center gap-3">
+        <Link href="/" className="relative block w-[220px] md:w-[260px] aspect-[4.5/1] shrink-0 overflow-hidden">
           <Image
-            src="/timshel-logo-dark.svg"
+            src="/timshel-triangle-logo.png"
             alt="Timshel Global"
-            width={610}
-            height={64}
-            className="w-[220px] md:w-[260px] h-auto object-contain"
+            width={1774}
+            height={887}
+            sizes="(max-width: 768px) 300px, 360px"
+            className="absolute left-1/2 top-1/2 w-[138%] max-w-none h-auto -translate-x-1/2 -translate-y-1/2"
             priority
           />
         </Link>
