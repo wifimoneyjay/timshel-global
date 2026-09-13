@@ -43,9 +43,7 @@ export default function WhyTimshel() {
           </p>
 
           <p className="text-[#7a7a9e] text-base leading-relaxed font-light">
-            As one of a select group of firms licensed for the Continuous Commissioning&reg; process
-            through the Texas A&amp;M Energy Systems Laboratory, we bring a level of rigor and
-            specialization that most firms simply cannot. Commissioning and owner representation is
+            Commissioning and owner representation is
             all we do — and that singular focus is what makes the difference.
           </p>
         </AnimatedSection>

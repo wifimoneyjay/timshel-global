@@ -15,10 +15,9 @@ const services = [
     ),
   },
   {
-    title: "Continuous Commissioning\u00AE",
+    title: "Retro-Commissioning",
     description:
-      "Licensed through the Texas A&M Energy Systems Laboratory. Ongoing optimization of existing building systems for peak performance.",
-    badge: "Texas A&M Licensed",
+      "Improve existing building performance through system testing, controls adjustments, and verification of corrective measures.",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -96,11 +95,6 @@ export default function ServicesPreview() {
                   {service.title}
                 </h3>
 
-                {service.badge && (
-                  <span className="inline-block w-fit border border-[#4a90d9]/20 bg-[#4a90d9]/5 text-[#4a90d9] text-[9px] uppercase tracking-[0.2em] px-3 py-1 mb-4">
-                    {service.badge}
-                  </span>
-                )}
 
                 <p className="text-[#7a7a9e] text-sm font-light leading-relaxed flex-grow">
                   {service.description}

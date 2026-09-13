@@ -5,7 +5,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 export const metadata = {
   title: "Services | Timshel Global — Building Commissioning & Owner's Representative",
   description:
-    "Comprehensive building commissioning services including new construction Cx, Continuous Commissioning®, owner's representative, data center Cx, building envelope Cx, and energy code compliance.",
+    "Comprehensive building commissioning services including new construction Cx, retro-commissioning, owner's representative, data center Cx, building envelope Cx, and energy code compliance.",
   alternates: { canonical: "https://timshelglobal.com/services" },
 };
 
@@ -32,22 +32,21 @@ const services = [
   },
   {
     number: "02",
-    name: "Continuous Commissioning®",
-    badge: "Texas A&M ESL Licensed",
+    name: "Retro-Commissioning",
     description: [
-      "Continuous Commissioning® (CC®) is an ongoing process developed by the Texas A&M Energy Systems Laboratory to optimize the operation of existing buildings. Unlike traditional commissioning, CC® goes beyond verifying original design intent — it optimizes building operations for current conditions and occupancy.",
-      "As a licensed CC® provider through the Texas A&M ESL, we implement the full CC® process: benchmarking current performance, identifying optimization opportunities, implementing low-cost and no-cost improvements, and verifying sustained savings over time. Typical CC® projects achieve 10-30% energy savings within the first year.",
+      "Retro-commissioning evaluates existing buildings that were not commissioned during construction. It identifies how equipment and controls perform together under today's operating needs. We investigate comfort complaints, scheduling problems, and energy waste through document review, trend analysis, and functional testing.",
+      "Our process establishes current facility requirements, prioritizes practical corrections, and verifies the results. Findings, updated operating sequences, and staff guidance give owners a clear plan for maintaining building performance.",
     ],
     deliverables: [
-      "Energy Baseline Assessment",
-      "CC® Implementation Plan",
-      "Operational Optimization",
-      "Energy Savings Verification",
-      "Ongoing Monitoring & Reporting",
-      "Sustained Performance Documentation",
+      "Current Facility Requirements",
+      "Retro-Commissioning Plan",
+      "Controls Trend Analysis & Functional Testing",
+      "Prioritized Findings & Corrective Measures",
+      "Implementation Verification Report",
+      "Operating Documentation & Staff Training",
     ],
     sectors: ["Higher Education", "Healthcare", "Commercial", "Government"],
-    standards: ["Texas A&M ESL CC® Protocol"],
+    standards: [],
   },
   {
     number: "03",
@@ -243,11 +242,6 @@ export default function ServicesPage() {
                       <h2 className="text-3xl md:text-4xl text-white font-serif leading-tight">
                         {service.name}
                       </h2>
-                      {service.badge && (
-                        <span className="w-fit border border-[#4a90d9]/30 bg-[#4a90d9]/5 px-4 py-1 text-[10px] uppercase tracking-widest font-bold text-[#4a90d9] font-sans">
-                          {service.badge}
-                        </span>
-                      )}
                       <div className="h-[1px] w-12 bg-[#4a90d9]" />
                     </div>
                   </div>

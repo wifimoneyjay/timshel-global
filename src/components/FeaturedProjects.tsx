@@ -8,25 +8,26 @@ const projects = [
     name: "Jones Stadium South Endzone & Womble Football Complex",
     sector: "Higher Education",
     size: "300,000 SF · $210M",
-    image: "/project-university-real.jpg",
+    image: "/project-jones-south-endzone.jpg",
+    position: "center 80%",
   },
   {
     name: "Academic Science Building — Texas Tech University",
     sector: "Higher Education",
     size: "131,000 GSF · $92M",
-    image: "/project-umc-real.webp",
+    image: "/project-academic-sciences.jpg",
   },
   {
     name: "Summit Center Development — Midland, TX",
     sector: "Commercial",
     size: "20 Acres · $90M",
-    image: "/project-airport-real.jpg",
+    image: "/project-summit-center.webp",
   },
   {
     name: "Texas Tech School of Veterinary Medicine — Amarillo",
     sector: "Higher Education",
     size: "$94M",
-    image: "/project-datacenter.jpg",
+    image: "/project-veterinary-medicine.jpg",
   },
 ];
 
@@ -51,6 +52,7 @@ export default function FeaturedProjects() {
                 src={project.image}
                 alt={project.name}
                 fill
+                style={{ objectPosition: project.position ?? "center" }}
                 className="object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />

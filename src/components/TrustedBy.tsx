@@ -18,20 +18,6 @@ const partners: { name: string; logo: string; invert?: boolean; bigger?: boolean
     logo: "/logo-lubbock-isd.png",
     invert: true,
   },
-  {
-    name: "Federal Aviation Administration",
-    logo: "/logo-faa.png",
-    bigger: true,
-  },
-  {
-    name: "Texas A&M ESL",
-    logo: "/logo-tamu-seal.png",
-    bigger: true,
-  },
-  {
-    name: "City of Lubbock",
-    logo: "/logo-city-lubbock.png",
-  },
 ];
 
 export default function TrustedBy() {
@@ -48,7 +34,7 @@ export default function TrustedBy() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
           {partners.map((partner, i) => (
             <AnimatedSection key={partner.name} delay={i * 0.08}>
               <div className="group flex items-center justify-center border transition-all duration-500 p-6 h-28 md:h-32 bg-white/90 border-white/20 hover:bg-white hover:border-white/40 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] rounded-sm">

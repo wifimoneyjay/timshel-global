@@ -5,7 +5,7 @@ import ScrollProgressBar from "@/components/ScrollProgressBar";
 export const metadata: Metadata = {
   title: "Timshel Global | Building Commissioning — Lubbock TX",
   description: "Building commissioning & owner's rep services in Lubbock, Texas. 16 years, 400+ projects. New construction Cx, retro-Cx, data centers & more.",
-  keywords: "building commissioning Lubbock Texas, commissioning engineer Texas, continuous commissioning Texas A&M, owner's representative services Texas, data center commissioning, building envelope commissioning, Cx agent Lubbock",
+  keywords: "building commissioning Lubbock Texas, commissioning engineer Texas, retro-commissioning, owner's representative services Texas, data center commissioning, building envelope commissioning, Cx agent Lubbock",
   icons: {
     icon: "/favicon.svg",
     apple: "/favicon.svg",
@@ -78,7 +78,7 @@ const jsonLd = {
   },
   serviceType: [
     "Building Commissioning",
-    "Continuous Commissioning",
+    "Retro-Commissioning",
     "Owner's Representative Services",
     "Data Center Commissioning",
     "Building Envelope Commissioning",
